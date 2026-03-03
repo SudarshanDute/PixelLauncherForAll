@@ -4,6 +4,10 @@
 
 **PixelForAll** is a fork of Fossify Launcher,privacy-focused Android launcher designed to bring the sleek Pixel experience to everyone. Fast, highly customizable, and completely free of tracking.
 
+I wanted a pixel launcher and there seems to be no other option for me to create mine thats why I created this one.
+This launcher is made using AI most of the customisations perfomed by AI tools (Cause I am Noob and lazy to learn coading)
+But My Curiosity Made me Craete this launcher. You should definetly try this one if you want.
+
 ---
 
 ## ✨ Key Features
@@ -18,11 +22,11 @@ Elevate your navigation with a premium blur effect. The app drawer features a sm
 Get the best of both worlds: the minimalist aesthetic of Pixel devices combined with the power of open-source customization.
 - **Search Widget**: Fully integrated Google-style search bar.
 - **At a Glance**: Stay informed with a modern, clean widget layout.
-- **Fluid Animations**: Optimized for a responsive and lag-free feel.
+- **Fluid Animations**: Not sure about the optimization or responsive and lag-free feel.
 
 ### 🔒 Privacy First by Design
 Your data stays where it belongs: on your device.
-- **No Internet Access**: PixelForAll doesn't even ask for internet permissions.
+- **No Internet Access**: PixelForAll also doesn't even ask for internet permissions similer to fossify.
 - **No Ads, No Bloat**: Just a clean launcher that respects your space.
 - **Open Source**: Review everything on GitHub.
 
@@ -66,7 +70,7 @@ PixelForAll is built using modern Android standards (Kotlin & Jetpack Compose). 
   <img alt="Home Screen" src="fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png" width="23%">
   <img alt="App Drawer with Blur" src="fastlane/metadata/android/en-US/images/phoneScreenshots/2_en-US.png" width="23%">
   <img alt="Settings" src="fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png" width="23%">
-  <img alt="Customization" src="fastlane/metadata/android/en-US/images/phoneScreenshots/4_en-US.png" width="23%">
+  <img alt="Customization" src="fastlane/metadata/android/en-US/images/phoneScreenshots/5_en-US.png" width="23%">
 </div>
 
 ---
