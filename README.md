@@ -1,6 +1,6 @@
 # PixelForAll Launcher
 
-<img alt="Logo" src="graphics/icon.webp" width="120" />
+<img alt="Logo" src="graphics/PixelForAll.webp" width="120" />
 
 **PixelForAll** is a premium, privacy-focused Android launcher designed to bring the sleek Pixel experience to everyone. Fast, highly customizable, and completely free of tracking.
 
