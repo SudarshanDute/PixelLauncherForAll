@@ -1,8 +1,8 @@
 # PixelLauncherForAll
 
-<img alt="Logo" src="graphics/PixelForAll.webp" width="120" />
+<img alt="Logo" src="graphics/PixelLauncherForAll.webp" width="120" />
 
-**PixelForAll** is a fork of Fossify Launcher,privacy-focused Android launcher designed to bring the sleek Pixel experience to everyone. Fast, highly customizable, and completely free of tracking.
+**PixelLauncherForAll** is a fork of Fossify Launcher,privacy-focused Android launcher designed to bring the sleek Pixel experience to everyone. Fast, highly customizable, and completely free of tracking.
 
 I wanted a pixel launcher and there seems to be no other option for me to create mine thats why I created this one.
 This launcher is made using AI most of the customisations perfomed by AI tools (Cause I am Noob and lazy to learn coading)
@@ -13,7 +13,7 @@ But My Curiosity Made me Craete this launcher. You should definetly try this one
 ## ✨ Key Features
 
 ### 🎨 Material You Dynamic Theming
-Experience a home screen that breathes. PixelForAll fully integrates with Android 12+ dynamic color engine, adapting the entire UI palette to match your current wallpaper.
+Experience a home screen that breathes. PixelLauncherForAll fully integrates with Android 12+ dynamic color engine, adapting the entire UI palette to match your current wallpaper.
 
 ### 🌫️ Real-time Wallpaper Blur
 Elevate your navigation with a premium blur effect. The app drawer features a smooth, high-performance wallpaper blur that activates instantly with silky transitions.
@@ -26,7 +26,7 @@ Get the best of both worlds: the minimalist aesthetic of Pixel devices combined 
 
 ### 🔒 Privacy First by Design
 Your data stays where it belongs: on your device.
-- **No Internet Access**: PixelForAll also doesn't even ask for internet permissions similer to fossify.
+- **No Internet Access**: PixelLauncherForAll also doesn't even ask for internet permissions similer to fossify.
 - **No Ads, No Bloat**: Just a clean launcher that respects your space.
 - **Open Source**: Review everything on GitHub.
 
@@ -37,7 +37,7 @@ Your data stays where it belongs: on your device.
 ### 📦 Download
 
 ### ➡️ Quick Links
-- **Source Code**: [GitHub Repository](https://github.com/SudarshanDute/PixelForAll)
+- **Source Code**: [GitHub Repository](https://github.com/SudarshanDute/PixelLauncherForAll)
 - **Based on**: [Fossify Launcher](https://github.com/FossifyOrg/Launcher)
 - **Community**: [Reddit](https://www.reddit.com/r/Fossify) | [Telegram](https://t.me/Fossify)
 
@@ -45,12 +45,12 @@ Your data stays where it belongs: on your device.
 
 ## 🛠️ Building from Source
 
-PixelForAll is built using modern Android standards (Kotlin & Jetpack Compose). To build it yourself:
+PixelLauncherForAll is built using modern Android standards (Kotlin & Jetpack Compose). To build it yourself:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/SudarshanDute/PixelForAll.git
-   cd PixelForAll
+   git clone https://github.com/SudarshanDute/PixelLauncherForAll.git
+   cd PixelLauncherForAll
    ```
 
 2. **Setup Environment**:
@@ -79,5 +79,5 @@ PixelForAll is built using modern Android standards (Kotlin & Jetpack Compose). 
 Contributions are welcome! Whether it's reporting bugs, suggesting features, or submitting pull requests, everything helps. Check out [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## 📜 License
-PixelForAll is licensed under the [GPLv3 License](LICENSE).
+PixelLauncherForAll is licensed under the [GPLv3 License](LICENSE).
 
