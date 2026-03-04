@@ -1,0 +1,189 @@
+
+> Configure project :app
+WARNING: The option setting 'android.enableJetifier=true' is deprecated.
+The current default is 'false'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+Warning: No signing config found. Build will be unsigned.
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preCoreDebugBuild UP-TO-DATE
+> Task :app:mergeCoreDebugNativeDebugMetadata NO-SOURCE
+> Task :app:dataBindingMergeDependencyArtifactsCoreDebug UP-TO-DATE
+> Task :app:extractCoreDebugSupportedLocales UP-TO-DATE
+> Task :app:generateCoreDebugLocaleConfig UP-TO-DATE
+> Task :app:generateCoreDebugResources UP-TO-DATE
+> Task :app:mergeCoreDebugResources UP-TO-DATE
+> Task :app:packageCoreDebugResources UP-TO-DATE
+> Task :app:processCoreDebugNavigationResources UP-TO-DATE
+> Task :app:parseCoreDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesCoreDebug UP-TO-DATE
+> Task :app:generateCoreDebugBuildConfig UP-TO-DATE
+> Task :app:generateCoreDebugRFile UP-TO-DATE
+> Task :app:javaPreCompileCoreDebug UP-TO-DATE
+> Task :app:generateCoreDebugAssets UP-TO-DATE
+> Task :app:mergeCoreDebugAssets UP-TO-DATE
+> Task :app:compressCoreDebugAssets UP-TO-DATE
+> Task :app:desugarCoreDebugFileDependencies UP-TO-DATE
+> Task :app:checkCoreDebugAarMetadata UP-TO-DATE
+> Task :app:compileCoreDebugNavigationResources UP-TO-DATE
+> Task :app:mapCoreDebugSourceSetPaths UP-TO-DATE
+> Task :app:createCoreDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksCoreDebug UP-TO-DATE
+
+> Task :app:processCoreDebugMainManifest
+C:\Users\shadow\Desktop\PixelForAll2\app\src\main\AndroidManifest.xml Warning:
+	uses-permission#com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY was tagged at AndroidManifest.xml:0 to remove other declarations but no other declaration present
+
+> Task :app:processCoreDebugManifest
+> Task :app:checkCoreDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexCoreDebug UP-TO-DATE
+> Task :app:mergeLibDexCoreDebug UP-TO-DATE
+> Task :app:mergeCoreDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeCoreDebugNativeLibs UP-TO-DATE
+> Task :app:stripCoreDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningCoreDebug UP-TO-DATE
+> Task :app:writeCoreDebugAppMetadata UP-TO-DATE
+> Task :app:writeCoreDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preFossDebugBuild UP-TO-DATE
+> Task :app:mergeFossDebugNativeDebugMetadata NO-SOURCE
+> Task :app:dataBindingMergeDependencyArtifactsFossDebug UP-TO-DATE
+> Task :app:extractFossDebugSupportedLocales UP-TO-DATE
+> Task :app:generateFossDebugLocaleConfig UP-TO-DATE
+> Task :app:generateFossDebugResources UP-TO-DATE
+> Task :app:mergeFossDebugResources UP-TO-DATE
+> Task :app:packageFossDebugResources UP-TO-DATE
+> Task :app:processFossDebugNavigationResources UP-TO-DATE
+> Task :app:parseFossDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesFossDebug UP-TO-DATE
+> Task :app:generateFossDebugBuildConfig UP-TO-DATE
+> Task :app:generateFossDebugRFile UP-TO-DATE
+> Task :app:kspFossDebugKotlin UP-TO-DATE
+> Task :app:compileFossDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileFossDebug UP-TO-DATE
+> Task :app:compileFossDebugJavaWithJavac
+> Task :app:generateFossDebugAssets UP-TO-DATE
+> Task :app:mergeFossDebugAssets UP-TO-DATE
+> Task :app:compressFossDebugAssets UP-TO-DATE
+> Task :app:checkFossDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarFossDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexFossDebug UP-TO-DATE
+> Task :app:checkFossDebugAarMetadata UP-TO-DATE
+> Task :app:compileFossDebugNavigationResources UP-TO-DATE
+> Task :app:mapFossDebugSourceSetPaths UP-TO-DATE
+> Task :app:createFossDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksFossDebug UP-TO-DATE
+> Task :app:processFossDebugMainManifest UP-TO-DATE
+> Task :app:processFossDebugManifest UP-TO-DATE
+> Task :app:processFossDebugManifestForPackage UP-TO-DATE
+> Task :app:processFossDebugResources UP-TO-DATE
+> Task :app:dexBuilderFossDebug
+> Task :app:mergeFossDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processFossDebugJavaRes UP-TO-DATE
+> Task :app:mergeFossDebugJavaResource UP-TO-DATE
+> Task :app:mergeLibDexFossDebug UP-TO-DATE
+> Task :app:mergeFossDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeFossDebugNativeLibs UP-TO-DATE
+> Task :app:stripFossDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningFossDebug UP-TO-DATE
+> Task :app:writeFossDebugAppMetadata UP-TO-DATE
+> Task :app:writeFossDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preGplayDebugBuild UP-TO-DATE
+> Task :app:mergeGplayDebugNativeDebugMetadata NO-SOURCE
+> Task :app:dataBindingMergeDependencyArtifactsGplayDebug UP-TO-DATE
+> Task :app:extractGplayDebugSupportedLocales UP-TO-DATE
+> Task :app:generateGplayDebugLocaleConfig UP-TO-DATE
+> Task :app:generateGplayDebugResources UP-TO-DATE
+> Task :app:mergeGplayDebugResources UP-TO-DATE
+> Task :app:packageGplayDebugResources UP-TO-DATE
+> Task :app:processGplayDebugNavigationResources UP-TO-DATE
+> Task :app:parseGplayDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesGplayDebug UP-TO-DATE
+> Task :app:generateGplayDebugBuildConfig UP-TO-DATE
+> Task :app:generateGplayDebugRFile UP-TO-DATE
+> Task :app:mergeProjectDexFossDebug
+> Task :app:kspGplayDebugKotlin UP-TO-DATE
+> Task :app:compileGplayDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileGplayDebug UP-TO-DATE
+> Task :app:compileGplayDebugJavaWithJavac UP-TO-DATE
+> Task :app:generateGplayDebugAssets UP-TO-DATE
+> Task :app:mergeGplayDebugAssets UP-TO-DATE
+> Task :app:compressGplayDebugAssets UP-TO-DATE
+> Task :app:checkGplayDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarGplayDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexGplayDebug UP-TO-DATE
+> Task :app:checkGplayDebugAarMetadata UP-TO-DATE
+> Task :app:compileGplayDebugNavigationResources UP-TO-DATE
+> Task :app:mapGplayDebugSourceSetPaths UP-TO-DATE
+> Task :app:createGplayDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksGplayDebug UP-TO-DATE
+> Task :app:processGplayDebugMainManifest UP-TO-DATE
+> Task :app:processGplayDebugManifest UP-TO-DATE
+> Task :app:processGplayDebugManifestForPackage UP-TO-DATE
+> Task :app:processGplayDebugResources UP-TO-DATE
+> Task :app:dexBuilderGplayDebug UP-TO-DATE
+> Task :app:mergeGplayDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processGplayDebugJavaRes UP-TO-DATE
+> Task :app:mergeGplayDebugJavaResource UP-TO-DATE
+> Task :app:mergeLibDexGplayDebug UP-TO-DATE
+> Task :app:mergeGplayDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeGplayDebugNativeLibs UP-TO-DATE
+> Task :app:stripGplayDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningGplayDebug UP-TO-DATE
+> Task :app:writeGplayDebugAppMetadata UP-TO-DATE
+> Task :app:writeGplayDebugSigningConfigVersions UP-TO-DATE
+> Task :app:processCoreDebugManifestForPackage
+> Task :app:mergeProjectDexGplayDebug
+> Task :app:packageFossDebug
+> Task :app:createFossDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleFossDebug
+> Task :app:packageGplayDebug
+> Task :app:createGplayDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleGplayDebug
+> Task :app:kspCoreDebugKotlin
+> Task :app:processCoreDebugResources
+
+> Task :app:compileCoreDebugKotlin
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/build/generated/ksp/coreDebug/kotlin/com/pixellauncherforall/home/interfaces/HomeScreenGridItemsDao_Impl.kt:61:13 Condition is always 'false'.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/MainActivity.kt:44:8 'class GestureDetectorCompat : Any' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/MainActivity.kt:147:37 'class GestureDetectorCompat : Any' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/MainActivity.kt:184:21 'constructor(p0: @NonNull() Context, p1: @NonNull() GestureDetector.OnGestureListener): GestureDetectorCompat' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/MainActivity.kt:766:16 'var navigationBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/MainActivity.kt:766:47 'fun getColor(p0: Int): Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/MainActivity.kt:801:16 'var navigationBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/MainActivity.kt:1063:13 'fun startActivityForResult(p0: Intent, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/MainActivity.kt:1435:17 'fun startActivityForResult(p0: Intent, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/MainActivity.kt:1463:13 'fun startActivityForResult(p0: Intent, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/SelectSearchBarWidgetActivity.kt:153:64 'fun startActivityForResult(p0: Intent, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/activities/SettingsActivity.kt:385:17 'fun startActivityForResult(p0: Intent, p1: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/adapters/WidgetsAdapter.kt:145:32 'val adapterPosition: Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/views/HomeScreenGrid.kt:177:39 'fun getColor(p0: Int): Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/views/HomeScreenGrid.kt:186:39 'fun getColor(p0: Int): Int' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/views/HomeScreenGrid.kt:458:39 'fun buildDrawingCache(): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/views/HomeScreenGrid.kt:459:84 'val drawingCache: Bitmap!' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/views/HomeScreenGrid.kt:1244:24 'fun updateAppWidgetSize(p0: Bundle!, p1: Int, p2: Int, p3: Int, p4: Int): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/views/HomeScreenGrid.kt:1799:22 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/views/HomeScreenGrid.kt:1831:18 'fun setBoundsInParent(p0: Rect!): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/shadow/Desktop/PixelForAll2/app/src/main/kotlin/com/pixellauncherforall/home/views/MyAppWidgetHostView.kt:13:36 'constructor(): Handler' is deprecated. Deprecated in Java.
+
+> Task :app:compileCoreDebugJavaWithJavac
+> Task :app:dexBuilderCoreDebug
+> Task :app:mergeCoreDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processCoreDebugJavaRes UP-TO-DATE
+> Task :app:mergeCoreDebugJavaResource UP-TO-DATE
+> Task :app:mergeProjectDexCoreDebug UP-TO-DATE
+> Task :app:packageCoreDebug
+> Task :app:createCoreDebugApkListingFileRedirect
+> Task :app:assembleCoreDebug
+> Task :app:assembleDebug
+
+[Incubating] Problems report is available at: file:///C:/Users/shadow/Desktop/PixelForAll2/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 28s
+129 actionable tasks: 16 executed, 113 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.1/userguide/configuration_cache_enabling.html
