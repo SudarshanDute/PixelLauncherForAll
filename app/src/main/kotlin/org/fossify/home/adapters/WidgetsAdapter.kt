@@ -5,7 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import org.fossify.commons.extensions.getProperTextColor
 import org.fossify.home.R
 import org.fossify.home.activities.SimpleActivity
@@ -78,14 +77,31 @@ class WidgetsAdapter(
 
     private fun setupListItemsHolder(view: View, listItem: WidgetsListItemsHolder) {
         val binding = ItemWidgetListItemsHolderBinding.bind(view)
-        binding.widgetListItemsHolder.removeAllViews()
-        binding.widgetListItemsScrollView.scrollX = 0
-        listItem.widgets.forEachIndexed { index, widget ->
-            val imageSize = activity.resources.getDimension(R.dimen.widget_preview_size).toInt()
-            val widgetPreview = ItemWidgetPreviewBinding.inflate(LayoutInflater.from(activity))
-            binding.widgetListItemsHolder.addView(widgetPreview.root)
+        val childCount = binding.widgetListItemsHolder.childCount
+        
+        // Ensure child count matches required widgets
+        if (childCount < listItem.widgets.size) {
+            val inflateCount = listItem.widgets.size - childCount
+            for (i in 0 until inflateCount) {
+                val widgetPreview = ItemWidgetPreviewBinding.inflate(LayoutInflater.from(activity))
+                binding.widgetListItemsHolder.addView(widgetPreview.root)
+            }
+        }
 
-            val endMargin = if (index == listItem.widgets.size - 1) {
+        // Bind data properly by hiding unused views at the tail end
+        for (i in 0 until childCount.coerceAtLeast(listItem.widgets.size)) {
+            val childView = binding.widgetListItemsHolder.getChildAt(i)
+            if (i >= listItem.widgets.size) {
+                childView.visibility = View.GONE
+                continue
+            }
+            childView.visibility = View.VISIBLE
+            
+            val widget = listItem.widgets[i]
+            val widgetPreview = ItemWidgetPreviewBinding.bind(childView)
+
+            val imageSize = activity.resources.getDimension(R.dimen.widget_preview_size).toInt()
+            val endMargin = if (i == listItem.widgets.size - 1) {
                 activity.resources.getDimension(org.fossify.commons.R.dimen.medium_margin).toInt()
             } else {
                 0
@@ -110,9 +126,11 @@ class WidgetsAdapter(
                 height = imageSize
             }
 
-            Glide.with(activity)
-                .load(widget.widgetPreviewImage)
-                .into(widgetPreview.widgetImage)
+            if (widget.widgetPreviewImage != null) {
+                widgetPreview.widgetImage.setImageDrawable(widget.widgetPreviewImage)
+            } else {
+                widgetPreview.widgetImage.setImageDrawable(null)
+            }
 
             widgetPreview.root.setOnClickListener { itemClick() }
 

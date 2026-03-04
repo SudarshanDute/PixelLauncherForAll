@@ -242,6 +242,7 @@ class WidgetsFragment(context: Context, attributeSet: AttributeSet) :
                     ignoreTouches = false
                     touchDownY = -1
                 }.apply {
+                    binding.widgetsList.setHasFixedSize(true)
                     binding.widgetsList.adapter = this
                 }
             } else {

@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.qtalk.recyclerviewfastscroller.RecyclerViewFastScroller
 import org.fossify.commons.extensions.beVisibleIf
 import org.fossify.commons.extensions.getColoredDrawableWithColor
@@ -79,58 +78,74 @@ class LaunchersAdapter(
     }
 
     inner class ViewHolder(private val binding: ItemLauncherLabelBinding) : RecyclerView.ViewHolder(binding.root) {
-        @SuppressLint("ClickableViewAccessibility")
-        fun bindView(launcher: AppLauncher) {
-            itemView.apply {
-                binding.launcherLabel.text = launcher.title
-                binding.launcherLabel.beVisibleIf(activity.config.showDrawerAppLabels)
-                
-                if (launcher.drawable != null) {
-                    Glide.with(activity).clear(binding.launcherIcon)
-                    binding.launcherIcon.setImageDrawable(launcher.drawable)
-                } else {
-                    val placeholderDrawable = activity.resources.getColoredDrawableWithColor(
-                        drawableId = R.drawable.placeholder_drawable,
-                        color = launcher.thumbnailColor
-                    )
-                    binding.launcherIcon.setImageDrawable(placeholderDrawable)
+        
+        init {
+            itemView.setOnClickListener { 
+                val position = bindingAdapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    itemClick(getItem(position))
                 }
-
-                setOnClickListener { itemClick(launcher) }
-                setOnLongClickListener {
+            }
+            itemView.setOnLongClickListener {
+                val position = bindingAdapterPosition
+                if (position != RecyclerView.NO_POSITION) {
                     val location = IntArray(2)
-                    getLocationOnScreen(location)
+                    itemView.getLocationOnScreen(location)
                     allAppsListener.onAppLauncherLongPressed(
-                        x = (location[0] + width / 2).toFloat(),
+                        x = (location[0] + itemView.width / 2).toFloat(),
                         y = location[1].toFloat(),
-                        appLauncher = launcher
+                        appLauncher = getItem(position)
                     )
-                    true
                 }
+                true
+            }
 
-                setOnTouchListener { _, event ->
-                    when (event.action) {
-                        MotionEvent.ACTION_DOWN -> {
-                            binding.launcherIcon.drawable?.alpha = LAUNCHER_ALPHA_PRESSED
-                            animateScale(
-                                from = LAUNCHER_SCALE_NORMAL,
-                                to = LAUNCHER_SCALE_PRESSED,
-                                duration = LAUNCHER_SCALE_UP_DURATION
-                            )
-                        }
-
-                        MotionEvent.ACTION_UP,
-                        MotionEvent.ACTION_CANCEL -> {
-                            binding.launcherIcon.drawable?.alpha = LAUNCHER_ALPHA_NORMAL
-                            animateScale(
-                                from = LAUNCHER_SCALE_PRESSED,
-                                to = LAUNCHER_SCALE_NORMAL,
-                                duration = LAUNCHER_SCALE_DOWN_DURATION
-                            )
-                        }
+            @SuppressLint("ClickableViewAccessibility")
+            itemView.setOnTouchListener { _, event ->
+                val position = bindingAdapterPosition
+                if (position == RecyclerView.NO_POSITION) return@setOnTouchListener false
+                
+                when (event.action) {
+                    MotionEvent.ACTION_DOWN -> {
+                        binding.launcherIcon.drawable?.alpha = LAUNCHER_ALPHA_PRESSED
+                        itemView.animateScale(
+                            from = LAUNCHER_SCALE_NORMAL,
+                            to = LAUNCHER_SCALE_PRESSED,
+                            duration = LAUNCHER_SCALE_UP_DURATION
+                        )
                     }
-                    false
+
+                    MotionEvent.ACTION_UP,
+                    MotionEvent.ACTION_CANCEL -> {
+                        binding.launcherIcon.drawable?.alpha = LAUNCHER_ALPHA_NORMAL
+                        itemView.animateScale(
+                            from = LAUNCHER_SCALE_PRESSED,
+                            to = LAUNCHER_SCALE_NORMAL,
+                            duration = LAUNCHER_SCALE_DOWN_DURATION
+                        )
+                    }
                 }
+                false
+            }
+        }
+
+        fun bindView(launcher: AppLauncher) {
+            binding.launcherLabel.text = launcher.title
+            binding.launcherLabel.beVisibleIf(activity.config.showDrawerAppLabels)
+            
+            // Explicitly resetting alpha and scale handles RecyclerView glitches
+            binding.launcherIcon.drawable?.alpha = LAUNCHER_ALPHA_NORMAL
+            itemView.scaleX = LAUNCHER_SCALE_NORMAL
+            itemView.scaleY = LAUNCHER_SCALE_NORMAL
+            
+            if (launcher.drawable != null) {
+                binding.launcherIcon.setImageDrawable(launcher.drawable)
+            } else {
+                val placeholderDrawable = activity.resources.getColoredDrawableWithColor(
+                    drawableId = R.drawable.placeholder_drawable,
+                    color = launcher.thumbnailColor
+                )
+                binding.launcherIcon.setImageDrawable(placeholderDrawable)
             }
         }
     }

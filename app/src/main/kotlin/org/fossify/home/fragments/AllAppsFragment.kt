@@ -150,6 +150,7 @@ class AllAppsFragment(
                     touchDownY = -1
                 }.apply {
                     binding.allAppsGrid.itemAnimator = null
+                    binding.allAppsGrid.setHasFixedSize(true)
                     binding.allAppsGrid.adapter = this
                 }
             }
