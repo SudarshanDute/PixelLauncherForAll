@@ -19,7 +19,7 @@ app-build-minimumSDK = "26"
 app-build-javaVersion = "VERSION_17"
 app-build-kotlinJVMTarget = "17"
 #AndroidX
-appcompat = "1.7.0"
+appcompat = "1.7.1"
 #Material
 material3 = "1.4.0"
 material = "1.12.0"
