@@ -81,3 +81,4 @@ Contributions are welcome! Whether it's reporting bugs, suggesting features, or 
 ## 📜 License
 PixelLauncherForAll is licensed under the [GPLv3 License](LICENSE).
 
+# pixelLauncherforall
